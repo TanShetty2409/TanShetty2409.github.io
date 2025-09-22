@@ -48,7 +48,6 @@ p {
   text-shadow: 0px 0px 5px #111;
 }
 
-/* Sections */
 section {
   padding: 40px 20px;
   text-align: center;
@@ -61,7 +60,6 @@ h2 {
   text-shadow: 0px 0px 8px #ff00ff;
 }
 
-/* Project Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -88,7 +86,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 15px;
@@ -97,3 +94,4 @@ footer {
   color: #888;
   font-size: 12px;
 }
+
