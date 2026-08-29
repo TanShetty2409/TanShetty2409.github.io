@@ -3,75 +3,289 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanmay Shetty | Game Dev Portfolio</title>
+  <meta name="description" content="Tanmay Shetty — Unity Developer and Game Programmer portfolio.">
+  <title>Tanmay Shetty | Game Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>👾 Tanmay Shetty 👾</h1>
-    <p>Aspiring Indie Game Developer | Unity & C# Enthusiast</p>
-    <div class="btn-group">
-      <a href="https://drive.google.com/file/d/1zpAWcgqRmSPSvtvpmFtU8--DEjAuuIRN/view?usp=drive_link" class="btn">📄 Resume</a>
-      <a href="https://github.com/TanShetty2409" class="btn">💻 GitHub</a>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scroll-progress-bar"></span>
+  </div>
+
+  <header class="hero">
+    <div class="hud-corner hud-top-left">PLAYER_01</div>
+    <div class="hud-corner hud-top-right">UNITY // C#</div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal">[ GAME DEVELOPER PORTFOLIO ]</p>
+
+      <h1 class="glitch-title reveal" data-text="TANMAY SHETTY">TANMAY SHETTY</h1>
+
+      <p class="hero-subtitle reveal">
+        Unity Developer <span>•</span> C# <span>•</span> Gameplay Programming
+      </p>
+
+      <p class="hero-description reveal">
+        Building gameplay systems, interactive mechanics, AI behaviours and multiplayer experiences with Unity.
+      </p>
+
+      <div class="btn-group reveal">
+        <a href="https://drive.google.com/file/d/1hUa58vVfMQplHv-TswPQeY0CidHwbYmn/view?usp=sharing" class="btn" target="_blank" rel="noopener">📄 Resume</a>
+        <a href="https://github.com/TanShetty2409" class="btn" target="_blank" rel="noopener">💻 GitHub</a>
+        <a href="https://linkedin.com/in/tanmay-shetty-215b70246" class="btn" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      </div>
+
+      <div class="scroll-hint reveal">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
     </div>
   </header>
 
-  <section id="projects">
-    <h2>🎮 Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <video autoplay loop muted playsinline>
-          <source src="videos/Dungeon_Escape.mp4" type="video/mp4">
-        </video>
-        <h3>Dungeon Escape</h3>
-        <p>
-          2D platformer for Android featuring combat, multiple enemy types,
-          progression systems, in-game shop, and rewarded ads.
+  <main>
+    <section id="experience" class="section reveal-section">
+      <div class="section-heading">
+        <span class="section-index">01</span>
+        <h2>// EXPERIENCE</h2>
+      </div>
+
+      <div class="experience-intro">
+        <div class="experience-header">
+          <div>
+            <h3>Unity Developer</h3>
+            <p class="company">Epiko Studios</p>
+          </div>
+          <span class="date">FEB 2026 — PRESENT</span>
+        </div>
+        <p class="experience-summary">
+          Worked across live mobile game projects, building gameplay systems, UI, AI behaviour,
+          multiplayer networking and backend integrations in Unity.
         </p>
-        <a href="https://github.com/TanShetty2409/Dungeon_Escape-Android" target="_blank">🔗 View on GitHub</a>
-      </div>
-      
-      <div class="project-card">
-         <video autoplay loop muted playsinline>
-          <source src="videos/The_Great_Fleece.mp4" type="video/mp4">
-        </video>
-        <h3>The Great Fleece (Stealth)</h3>
-        <p>A point-and-click 3D stealth game with cinematic cutscenes, enemy AI, focusing on immersive level design and character interactions.</p>
-        <a href="https://github.com/TanShetty2409/The-Great-Fleece-Windows-Build" target="_blank">🔗 View on GitHub</a>
       </div>
 
-      <div class="project-card">
-         <video autoplay loop muted playsinline>
-          <source src="videos/Space_Shooter.mp4" type="video/mp4">
-        </video>
-        <h3>2D Space Shooter (Co-op)</h3>
-        <p>A Unity game with single-player and co-op modes, featuring animations, sound effects, and traffic management with colliders.</p>
-        <a href="https://github.com/TanShetty2409/Space-Shooter-WebGL" target="_blank">🔗 View on GitHub</a>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card-top">
+            <span class="work-number">01</span>
+            <span class="work-type">MOBILE // 3D</span>
+          </div>
+          <h3>Epiko Smash</h3>
+          <p class="game-role">3D Space Shooter</p>
+          <ul>
+            <li>Built a scalable hangar system for 7+ playable spaceships with scrollable selection UI.</li>
+            <li>Implemented per-ship stat upgrades using runtime-instanced ScriptableObjects and persistence.</li>
+            <li>Developed AI competitor ships with Unity Behavior Graphs, custom actions, obstacle avoidance, pickups and respawn logic.</li>
+            <li>Integrated backend emit responses to fetch and sync spaceship data.</li>
+          </ul>
+          <div class="work-tags"><span>UNITY</span><span>C#</span><span>AI</span><span>BEHAVIOR GRAPHS</span><span>BACKEND</span></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-top">
+            <span class="work-number">02</span>
+            <span class="work-type">MOBILE // 2D</span>
+          </div>
+          <h3>Soul Dash</h3>
+          <p class="game-role">2D Platformer</p>
+          <ul>
+            <li>Implemented five reusable platformer mechanics across three worlds, including moving and disappearing platforms.</li>
+            <li>Resolved 10+ gameplay bugs involving score, double jump, level locking, tilemaps and collisions.</li>
+            <li>Reworked level unlocking to use backend-driven progression with Unity emit response scripts.</li>
+          </ul>
+          <div class="work-tags"><span>UNITY</span><span>C#</span><span>GAMEPLAY</span><span>LEVEL DESIGN</span><span>BACKEND</span></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-top">
+            <span class="work-number">03</span>
+            <span class="work-type">MOBILE // TOWER DEFENCE</span>
+          </div>
+          <h3>Epiko Bricks</h3>
+          <p class="game-role">Tower Defence</p>
+          <ul>
+            <li>Extended the tower roster by implementing a new poison tower with two switchable attack modes.</li>
+            <li>Built single-target projectile and three-bullet burst attack behaviour with an editor-accessible mode toggle.</li>
+            <li>Coordinated with the backend team to register the new tower and validate the integration in-game.</li>
+          </ul>
+          <div class="work-tags"><span>UNITY</span><span>C#</span><span>GAMEPLAY</span><span>BACKEND</span></div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-top">
+            <span class="work-number">04</span>
+            <span class="work-type">PHOTON PUN // 2 PLAYER</span>
+          </div>
+          <h3>Multiplayer Prototype</h3>
+          <p class="game-role">Real-Time 2-Player Game</p>
+          <ul>
+            <li>Built a real-time 2-player prototype from scratch using Photon PUN.</li>
+            <li>Implemented room creation/joining, lobby flow and live player count.</li>
+            <li>Synchronised player movement across clients.</li>
+            <li>Developed RPC-based interactions including emotes and cross-client colour changes.</li>
+          </ul>
+          <div class="work-tags"><span>PHOTON PUN</span><span>RPC</span><span>MULTIPLAYER</span><span>UNITY</span></div>
+        </article>
       </div>
 
-    </div>
-  </section>
+      <p class="confidential-note">
+        Professional project details are kept intentionally limited to information suitable for a public portfolio.
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>🕹️ About Me</h2>
-    <p>
-        I'm a passionate game developer driven by a love for games and the art of building them. 
-    For me, game development is more than coding — it’s about creating immersive worlds, 
-    crafting engaging mechanics, and telling stories that players can truly experience. 
-    My long-term vision is to grow as a solo/indie developer and eventually build my own 
-    game studio where creativity and innovation come first. 
-    </p>
-  </section>
+    <section id="projects" class="section reveal-section">
+      <div class="section-heading">
+        <span class="section-index">02</span>
+        <h2>// PROJECTS</h2>
+      </div>
 
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:tanshetty2409@gmail.com">tanshetty2409@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/tanmay-shetty-215b70246" target="_blank">linkedin.com/in/tanmay-shetty-215b70246</a></p>
-  </section>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <video autoplay loop muted playsinline>
+              <source src="videos/Dungeon_Escape.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-type">UNITY // ANDROID</span>
+            <h3>Dungeon Escape</h3>
+            <p>
+              2D platformer for Android featuring melee combat, multiple enemy types,
+              gem-based progression, an in-game shop and rewarded ads.
+            </p>
+            <div class="project-tags">
+              <span>UNITY</span><span>C#</span><span>2D</span><span>MOBILE</span>
+            </div>
+            <a href="https://github.com/TanShetty2409/Dungeon_Escape-Android" target="_blank" rel="noopener">
+              🔗 VIEW ON GITHUB
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <video autoplay loop muted playsinline>
+              <source src="videos/The_Great_Fleece.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-type">UNITY // 3D STEALTH</span>
+            <h3>The Great Fleece</h3>
+            <p>
+              Point-and-click 3D stealth game featuring cinematic cutscenes,
+              interactive levels, enemy detection, distraction mechanics and cinematic camera work.
+            </p>
+            <div class="project-tags">
+              <span>UNITY</span><span>C#</span><span>AI</span><span>CINEMACHINE</span>
+            </div>
+            <a href="https://github.com/TanShetty2409/The-Great-Fleece-Windows-Build" target="_blank" rel="noopener">
+              🔗 VIEW ON GITHUB
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <video autoplay loop muted playsinline>
+              <source src="videos/Space_Shooter.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-type">UNITY // CO-OP</span>
+            <h3>2D Space Shooter</h3>
+            <p>
+              Unity space shooter with single-player and co-op modes,
+              animations, sound effects and gameplay interactions using colliders.
+            </p>
+            <div class="project-tags">
+              <span>UNITY</span><span>C#</span><span>CO-OP</span><span>WEBGL</span>
+            </div>
+            <a href="https://github.com/TanShetty2409/Space-Shooter-WebGL" target="_blank" rel="noopener">
+              🔗 VIEW ON GITHUB
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal-section">
+      <div class="section-heading">
+        <span class="section-index">03</span>
+        <h2>// SKILLS</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-panel">
+          <span class="terminal-icon">&gt;_</span>
+          <h3>PROGRAMMING</h3>
+          <p>C# · C · C++ · OOP · Data Structures · Algorithms</p>
+        </div>
+        <div class="skill-panel">
+          <span class="terminal-icon">◈</span>
+          <h3>GAME DEVELOPMENT</h3>
+          <p>Unity · Gameplay Programming · Game Physics · Behavior Graphs</p>
+        </div>
+        <div class="skill-panel">
+          <span class="terminal-icon">◎</span>
+          <h3>MULTIPLAYER</h3>
+          <p>Photon PUN · RPC · Room Systems · Lobby Systems</p>
+        </div>
+        <div class="skill-panel">
+          <span class="terminal-icon">◌</span>
+          <h3>TOOLS & INTEGRATION</h3>
+          <p>Cinemachine · Timeline · DOTween · Git · GitHub · Backend API scripting</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal-section">
+      <div class="section-heading">
+        <span class="section-index">04</span>
+        <h2>// ABOUT ME</h2>
+      </div>
+
+      <div class="about-panel">
+        <p>
+          I'm a Unity developer driven by a love for games and the process of building them.
+          I enjoy turning ideas into playable mechanics, experimenting with systems and
+          learning how different parts of a game work together.
+        </p>
+        <p>
+          My long-term goal is to grow as a game developer and eventually create games
+          independently, with a strong focus on gameplay and player experience.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal-section">
+      <div class="section-heading">
+        <span class="section-index">05</span>
+        <h2>// CONTACT</h2>
+      </div>
+
+      <div class="contact-panel">
+        <p class="contact-status"><span class="status-dot"></span> AVAILABLE FOR GAME DEV OPPORTUNITIES</p>
+        <a href="mailto:tanshetty2409@gmail.com">tanshetty2409@gmail.com</a>
+        <div class="contact-links">
+          <a href="https://linkedin.com/in/tanmay-shetty-215b70246" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/TanShetty2409" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Tanmay Shetty</p>
+    <p>© 2026 Tanmay Shetty</p>
+    <span>BUILD COMPLETE ✓</span>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
